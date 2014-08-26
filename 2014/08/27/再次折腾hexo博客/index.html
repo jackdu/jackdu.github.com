@@ -106,15 +106,26 @@
 <ol>
 <li>新建<code>blog</code>目录，需要顺序执行<code>hexo init</code>和<code>npm install</code>两个命令</li>
 <li>部署时（<code>hexo deploy</code>）遇到“<code>blog</code>文件夹不包含<code>.git</code>目录”的问题，只要在<code>blog</code>文件夹和<code>.deploy</code>文件夹内都新建git工程即可。</li>
-<li></li>
+<li>待解决：无法在github上生成静态网页</li>
 </ol>
 <h2 id="配置">配置</h2>
-<h3 id="最">最</h3>
+<ol>
+<li>生成post时默认生成categories配置项：在<code>scaffolds/post.md</code>中，添加一行<code>categories:</code>。同理可应用在<code>page.md</code>和<code>photo.md</code>。</li>
+<li><p>导航栏添加“关于”：</p>
+<ol>
+<li><code>hexo new page &quot;about&quot;</code></li>
+<li>到<code>source/about/index.md</code>编辑内容  </li>
+<li>在<code>themes/light/_config.yml</code>中，添加<br>menu:<br>关于: /about</li>
+</ol>
+</li>
+<li><p>主页文章显示摘要：在要作为摘要的文字后面添加<code>&lt;!--more--&gt;</code>即可。</p>
+</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/08/27/再次折腾hexo博客/" data-id="kq0zc9r6mkppjbxr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2014/08/27/再次折腾hexo博客/" data-id="jjjc1c1onql8vkic" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tips/">tips</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/有意思/">有意思</a></li></ul>
@@ -162,7 +173,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/hexo/" style="font-size: 20.00px;">hexo</a><a href="/tags/interesting/" style="font-size: 10.00px;">interesting</a><a href="/tags/tips/" style="font-size: 15.00px;">tips</a><a href="/tags/有意思/" style="font-size: 20.00px;">有意思</a>
+      <a href="/tags/hexo/" style="font-size: 20.00px;">hexo</a><a href="/tags/tips/" style="font-size: 10.00px;">tips</a><a href="/tags/有意思/" style="font-size: 20.00px;">有意思</a>
     </div>
   </div>
 
