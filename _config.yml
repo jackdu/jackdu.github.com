@@ -79,7 +79,7 @@ disqus_shortname:
 # Extensions 配置站点所用主题和插件
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
-theme: landscape
+theme: jacman # hexo-theme/Tinny # pacman # jacman
 exclude_generator:
 
 # Deployment
