@@ -23,14 +23,14 @@ tags: [hexo, 有意思, tips]
 
 1. 新建`blog`目录，需要顺序执行`hexo init`和`npm install`两个命令
 2. 部署时（`hexo deploy`）遇到“`blog`文件夹不包含`.git`目录”的问题，只要在`blog`文件夹和`.deploy`文件夹内都新建git工程即可。
-3. 待解决：无法在github上生成静态网页
+3. 无法在github上生成静态网页：github上的工程名必须是`username.github.com`或者`username.github.io`，否则新建的博客页面必须push到`gh-pages`分支下，且网址会变成`username.gihub.io/project_name`
 
 ## 配置 ##
 
 1. 生成post时默认生成categories配置项：在`scaffolds/post.md`中，添加一行`categories:`。同理可应用在`page.md`和`photo.md`。
 2. 导航栏添加“关于”：
   1. `hexo new page "about"`
-  2. 到`source/about/index.md`编辑内容  
+  2. 到`source/about/index.md`编辑内容
   3. 在`themes/light/_config.yml`中，添加
      menu:
      关于: /about

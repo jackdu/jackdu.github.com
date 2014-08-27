@@ -7,7 +7,7 @@ title: 江南的博客 #站点名，站点左上角
 subtitle: 学习, 思考 | 总结 #副标题，站点左上角
 description: 学习, 思考 | 总结 #给搜索引擎看的，对站点的描述，可以自定义
 author: Du Jiangnan
-email: 
+email:
 language: zh-CN
 
 # URL  暂不配置，绑定域名后，欲创建sitemap.xml需要配置该项
@@ -86,5 +86,5 @@ exclude_generator:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: github
-  repository: git@github.com:jackdu/skydjn.github.com.git
-  branch: master
+  repository: git@github.com:jackdu/jackdu.github.com.git
+  branch:
