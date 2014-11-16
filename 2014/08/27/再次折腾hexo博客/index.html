@@ -122,6 +122,7 @@
 <li><p>主页文章显示摘要：在要作为摘要的文字后面添加<code>&lt;!--more--&gt;</code>即可。</p>
 </li>
 <li>在<code>TAG CLOUD</code>中存在已经删除的标签：需要重新生成博客文章：<code>hexo clean</code> -&gt; <code>hexo g</code> -&gt; <code>hexo d</code></li>
+<li>使用<code>powershell</code>运行<code>hexo deploy</code>命令，发生<code>spawn ENOENT</code>错误，原因是没有在系统环境变量中增加<code>git</code>路径，导致windows环境中无法识别git命令。改为在<code>git bash</code>中运行即可。</li>
 </ol>
   
 	</div>
