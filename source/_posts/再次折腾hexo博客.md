@@ -37,5 +37,6 @@ tags: [hexo, 有意思, tips]
 
 3. 主页文章显示摘要：在要作为摘要的文字后面添加`<!--more-->`即可。
 4. 在`TAG CLOUD`中存在已经删除的标签：需要重新生成博客文章：`hexo clean` -> `hexo g` -> `hexo d`
+5. 使用`powershell`运行`hexo deploy`命令，发生`spawn ENOENT`错误，原因是没有在系统环境变量中增加`git`路径，导致windows环境中无法识别git命令。改为在`git bash`中运行即可。
 
 
